@@ -5,12 +5,18 @@
 
 
  body{
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-image: url(../images/square.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
     color: #777777;
     font-family: Arial, Helvetica, sans-serif
+  
+
     }
 
 h1 {
@@ -78,12 +84,14 @@ footer{
 
 
 
-
 /**
  * ABOUT STYLING
  **/
 
+main {
+  background-color: #ffffff
 
+}
 
 
 
@@ -104,36 +112,42 @@ footer{
  * PORTFOLIO STYLING
  **/
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #4aaaa5;
-  }
+ .work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
 
-  /**
- * CONTACT STYLING
- **/
+.work:nth-child(even) {
+  margin-right: 40px;
+}
 
- .center {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    background-color: #ffffff
-  }
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
