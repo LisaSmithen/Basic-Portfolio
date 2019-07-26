@@ -14,7 +14,8 @@
     background-size: cover;
     background-attachment: fixed; 
     color: #777777;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
   
 
     }
@@ -32,8 +33,9 @@ h1 {
 
 h2 {
     color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    
 }
 
 ul {
@@ -100,7 +102,11 @@ footer{
   
   img {
     float: left;
-
+  }
+  .main {
+    text-align: 
+  
+  }
 
 
 
@@ -119,42 +125,76 @@ footer{
  * PORTFOLIO STYLING
  **/
 
- .work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
+ .brands {
+   float: left;
+   width: 200px;
+   height: 200px;
+   margin: 10px;
+ }
+
+
+ .copy {
+  float: right;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
 }
 
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
-
-.auth-image {
+.strategy {
   float: left;
   width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
+  height: 200px;
+  margin: 10px;
+  clear: left;
+}
+
+.design {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.development {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  clear: left;
+}
+
+/**
+ * CONTACT STYLING
+ **/
+
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+ input[type=submit]{
+  background-color: #4aaaa5;
+  border: none;
+  color: #ffffff;
+  padding: 14px 50px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
+
+input[type=submit]:hover {
+  background-color: #purple;
+  
+}
+
+div {
+  border-radius: 5px;
+  background-color: #fffff;
+  padding: 20px;
+  
 }
